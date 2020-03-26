@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <title></title>
+        <!-- YOUR STYLE SHEET -->
+        <link rel="stylesheet" href="style.css" />
+        <!-- CDN FOR MERCEDUI -->
+        <script
+            src="http://www.alexmercedcoder.com/UI.js"
+            charset="utf-8"
+            defer
+        ></script>
+        <!-- BUILD YOUR COMPONENTS IN COMPONENTS.JS -->
+        <script src="components.js" charset="utf-8" defer></script>
+        <!-- PUT ALL YOUR OTHER LOGIN IN APP.JS -->
+        <script src="app.js" charset="utf-8" defer></script>
+    </head>
+    <body>
+        <test-component user="Alex Merced" id="test"></test-component>
+        <button
+            onclick="document.querySelector('test-component').setState({hello: 'It Works!!!!'})"
+        >
+            This Button Changes State
+        </button>
+        <button
+            onclick="document.querySelector('test-component').dispatch({action: 'goodbye'})"
+        >
+            This Button Uses Dispatch
+        </button>
+        <button
+            onclick="appState.set({hello: 'you updated the global state!'})"
+        >
+            This Button Uses the Global Store
+        </button>
+    </body>
+</html>
