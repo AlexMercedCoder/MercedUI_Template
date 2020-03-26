@@ -25,4 +25,4 @@ Part of the goal is to find bugs, so if you come across a bug in using MercedUI 
 
 ## Submitting your entry
 
-Submit a link to a repo of your submission as a github issue to this repository by April 30th to be considered for the prize.
+Submit a link to a repo and deployed version of your submission as a github issue to this repository by April 30th to be considered for the prize.
